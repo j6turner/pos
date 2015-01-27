@@ -1,0 +1,21 @@
+h1 {
+  font-family: Georgia, Helvetica;
+  color: #5E6868;
+  background-color: #D6E7ED;
+  border: 3px solid #FF6600;
+  padding: 10px 15px 15px 20px;
+}
+
+h3 {
+  font-family: Times, Helvetica;
+  color: #FF6600;
+}
+
+h4 {
+  font-family: Georgia, Helvetica;
+  color: #5E6868;
+}
+
+li {
+  font-family: Times;
+}

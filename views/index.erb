@@ -1,0 +1,56 @@
+<h1>JMH and JT Food Palace</h1>
+
+<br >
+
+<hr noshade>
+
+<h3>Here are the purchases you have made:</h3>
+
+<ul>
+  <% if @purchase.any?() %>
+    <% @purchase.each() do |purchase_object| %>
+    <li><%= purchase_object.date() %></li>
+    <ul>
+      <% if purchase_object.products().any?() %>
+        <% purchase_object.products().each() do |product| %>
+        <li><%= product.name() %> {$<%= product.price() %>} </li>
+        <% end %>
+      <% end %>
+      </ul>
+    <% end %>
+  <% else %>
+    <%= "There are no purchases!" %>
+  <% end %>
+</ul>
+
+<br >
+<br >
+
+<h4>Add a purchase date:</h4>
+<form action="/purchase_post" method="post">
+  <label for="purchase_date">Purchase date: </label>
+  <input id="purchase_date" name="purchase_date" type="text" placeholder="0000-00-00">
+  <button type="submit" class="btn btn-warning">Add Purchase</button>
+</form>
+
+<h4>Add a product:</h4>
+<form action="/product_post" method="post">
+  <label for="product_name">Product name: </label>
+  <input id='product_name' name='product_name' type='text' placeholder="Apple">
+  <label for="product_price">Product price: $</label>
+  <input id='product_price' name='product_price' type='text' placeholder="00.00">
+   <label for="purchase_id">Purchase</label>
+   <select id="purchase_id" name="purchase_id" type="text" selected="selected">
+     <option selected="selected">date:</option>
+     <% @purchase.each() do |purchase| %>
+     <option value="<%= purchase.id() %>"> <%= purchase.date() %></option>
+     <% end %>
+   </select>
+  <button type="submit" class="btn btn-success">Add Product</button>
+</form>
+
+<ul>
+  <% @product.each() do |product| %>
+    <li><%= product.name() %> {$<%= product.price() %>} </li>
+  <% end %>
+</ul>

@@ -48,8 +48,13 @@ rake db:create
 Usage
 -----
 
-Upon completion of the above steps in the Installation section, open
-a Web browser and enter the following address:
+Upon completion of the above steps in the Installation section, enter the following statement into the command line:
+
+```ruby
+Ruby app.rb
+```
+
+Next, open a Web browser and enter the following address:
 
 ```url
 localhost:4567/

@@ -51,8 +51,8 @@ Database Schema
 -----
 
 DATABASES:
-  point_of_sale_dev
-  point_of_sale_test
+  pos_development
+  pos_test
 
 TABLES:
   purchases

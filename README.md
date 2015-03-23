@@ -1,7 +1,7 @@
 Point of Sale
 ======================
 
-The application will allow user to track purchase and the products contained in those purchases.
+The application allows user to track purchases and the products contained in those purchases.
 
 
 Installation
@@ -36,19 +36,20 @@ postgres
 ```
 To connect to the needed databases, enter the following into
 the command line of another terminal window:
+```
 psql
+```
 
 To create the needed databases, return to the original project window and type the following:
-
+```
 rake db:create
-
 ```
 
 Usage
 -----
 
 Upon completion of the above steps in the Installation section, open
-up your preferred web browser and enter the following address:
+a Web browser and enter the following address:
 
 ```url
 localhost:4567/
@@ -59,29 +60,21 @@ Enter a product name to view purchase history. Observe the results.
 Known Bugs
 ----------
 
-None as of 2014-01-27.
+None as of 2015-01-27.
 
 Contributing
 ------------
 
-1. If you have a better option for the counter.
+1. Better options? Please share.
+2. Please commit changes.
+3. Remember to branch!
 
-2. Please commit your changes.
-
-3. Branch them to others, remember we are on the same team!
-
-History
+Authors
 ------------
 
-The Point of Sale program allows business owners to track sales more easily through each quarter. Created by Mike Harris and Julie Turner, businessmen flocked to their website in order to acquire this game changing application.
-
-Credits
-------------
-
-Mike Harris and J. Turner credit the wonderful teachers
-and employees at Epicodus for providing the support.
+Mike Harris and J. Turner
 
 License
 ------------
 
-MIT license.
+MIT license

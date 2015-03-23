@@ -40,10 +40,31 @@ the command line of another terminal window:
 psql
 ```
 
-To create the needed databases, return to the original project window and type the following:
-```
+To create the needed databases, return to the original project window and type the following into the command line:
+```rake
 rake db:create
+rake db:migrate
+rake db:test:prepare
 ```
+
+Database Schema
+-----
+
+DATABASES:
+  point_of_sale_dev
+  point_of_sale_test
+
+TABLES:
+  purchases
+    id (integer PRIMARY KEY)
+    date (date)
+    
+  products
+    id (integer PRIMARY KEY)
+    name (string)
+    description (string)
+    price (float)
+    purchase_id (integer)
 
 Usage
 -----

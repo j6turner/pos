@@ -49,7 +49,7 @@ rake db:test:prepare
 
 Database Schema
 -----
-
+```
 DATABASES:
   pos_development
   pos_test
@@ -65,6 +65,7 @@ TABLES:
     description (string)
     price (float)
     purchase_id (integer)
+```    
 
 Usage
 -----
